@@ -65,6 +65,12 @@ function App() {
           Todos os direitos para Netflix.<br/>
           Os dados foram tirados do site do TMDB.<br/>
       </footer>
+      {movieList.length <= 0 &&
+        <div className='loading'>
+          <img src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif" alt="Carregando pagina" />
+        </div>
+      }
+      
     </div>
   );
 }
